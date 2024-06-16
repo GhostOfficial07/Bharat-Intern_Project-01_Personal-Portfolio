@@ -1,0 +1,400 @@
+/*----- BODY -----*/
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/*----- NAVBAR -----*/
+.navbar{
+    background-color: transparent;
+    padding: 2px;
+}
+
+.logo{
+    position: absolute;
+    font-size: 45px;
+    margin-left: 50px;
+    font-style:italic;
+    font-family: cursive;
+    color: black;
+    text-shadow: 1px 1px 1px red;
+    animation: rotate 5s linear infinite;
+    cursor: pointer;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    justify-content:end;
+}
+
+.nav-link{
+    color: red;
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#search{
+    margin-right: 10px;
+    width: 220px;
+    padding: 5px;
+    background-color: rgb(206, 163, 163);
+    border: 2px solid red;
+    border-radius: 5px;
+
+}
+
+#search-btn{
+    margin-right: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+/*---- PROFILE -----*/
+.profile img{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 50%;
+    left: 900px;
+    top: 100px;
+    transition: box-shadow 0.2s linear;
+}
+
+.home{
+    position: absolute;
+    top: 80px;
+}
+
+.profile h1{
+    position: relative;
+    top: 40px;
+    left: 30px;
+    font-size: 70px;   
+}
+
+.profile h1 span{
+    color: red;
+}
+
+.profile p:nth-child(3) {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    color: red;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.profile p{
+    position: relative;
+    width: 700px;   
+    font-size: 28px;
+    top: 10px;
+    left: 30px;
+}
+
+.btn{
+    position: relative;
+    top: 25px;
+    margin-left: 50px;
+    border: 1px solid black;
+    border-radius: 8px ;
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.btn:nth-child(5){
+    padding: 10px 35px;
+}
+
+/*----- EDUCATION ----*/
+.education{
+    position: relative;
+    top: 750px;
+  }
+  
+  .education h2{
+    color: red;
+    font-size: 70px;
+    margin-left: 30px;
+  }
+  
+  .timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color:red;
+    left: calc(50% - 1px);
+  }
+  
+  .timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .timeline-item:last-child{
+    margin-bottom: 0;
+  }
+  
+  .timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+  }
+  
+  .timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+  }
+  
+  .timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: black;
+    box-shadow: 0 0 25px red,
+                0 0 50px red;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+  }
+  
+  .timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+  }
+  
+  .timeline-content{
+    background-color: black;
+    border: 3px solid red;
+    box-shadow: 0 0 25px red;
+    padding: 30px 50px;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .timeline-content h3{
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: bolder;
+  }
+  
+  .timeline-content p{
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 22px;
+  }
+
+/*----- PROJECTS -----*/
+.projects{
+  position: relative;
+  top: 800px;
+}
+
+.projects h1{
+  position: relative;
+  margin-left: 30px;
+  font-size: 70px;
+  color: red;
+}
+
+.pro-content{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pro-item img{
+  height: 400px;
+  width: 430px;
+  border: 3px solid red;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px red;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.pro-item p{
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 100px;
+  transition: 0.3s ease-in-out;
+}
+
+/*----- CONTACT -----*/
+.contact{
+  position: relative;
+  top: 800px;
+}
+
+.contact h1{
+  position: relative;
+  margin-left: 30px;
+  font-size: 70px;
+  color: red;
+}
+
+.contact ul{
+  position: relative;
+  top: 30px;
+  list-style-type: none;
+  line-height: 50px;
+}
+
+.contact li,a{
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.form{
+  position: relative;
+  bottom: 200px;
+  width: 500px;
+  border: 2px solid red;
+  padding: 10px;
+  left: 850px;
+}
+
+.form label{
+  display: flex;
+  font-size: 22px;
+  color: red;
+}
+
+.form input{
+  width: 400px;
+  height: 25px;
+  border: 1px solid red;
+  color: white;
+  background-color: black;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.form textarea{
+  width: 400px;
+  height: 120px;
+  background-color: black;
+  border: 1px solid red;
+  margin: 5px;
+  color: white;
+  font-size: 15px;
+}
+
+.form button{
+  position: relative;
+  width: 100px;
+  padding: 5px 15px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  left: 120px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.reset-btn{
+  margin-left: 50px;
+}
+
+/*----- FOOTER -----*/
+.footer{
+  position: relative;
+  background-color: red;
+  padding: 5px;
+  top: 750px;
+}
+
+.copyright{
+  position: absolute;
+  left: 50px;
+  font-size: 20px;
+}
+
+.footer a{
+  margin-left: 100px;
+  
+}
+
+.footer a{
+  color: white;
+}
+
+/*----- HOVER EFFECT -----*/
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+#search-btn:hover{
+  background-color: black;
+  color: red;
+}
+
+.profile img:hover{
+    box-shadow: 1px 1px 75px black ,1px 1px 150px red;
+}
+
+.btn:hover{
+    border: 1px solid red;
+    background-color: black;
+    color: red;
+}
+
+.timeline-content:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 25px black;
+}
+
+.pro-item img:hover{
+  box-shadow: 1px 1px 20px black;
+  transform: scale(1.1);
+}
+
+.contact a:hover{
+  color: red;
+}
+
+.form button:hover{
+  background-color: black;
+  color: red;
+}
+
+/*----- KEYFRAMES -----*/
+@keyframes rotate {
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
